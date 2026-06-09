@@ -1,20 +1,98 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Personal Portfolio Website
 
-# Run and deploy your AI Studio app
+## Overview
 
-This contains everything you need to run your app locally.
+This is a full-stack personal portfolio website developed to showcase my projects, technical skills, and educational background. The application provides a modern user interface along with backend integration for handling dynamic content.
 
-View your app in AI Studio: https://ai.studio/apps/4fc655e7-f9bc-441c-b378-bc1d67c9d790
+## Features
 
-## Run Locally
+* Responsive user interface built with React and TypeScript
+* About section with educational details and learning journey
+* Skills section highlighting technical competencies
+* Projects section displaying academic and personal projects
+* Contact form integrated with backend services
+* MongoDB support for storing dynamic data
+* Local memory fallback for development environments
 
-**Prerequisites:**  Node.js
+## Technologies Used
 
+### Frontend
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* React
+* TypeScript
+* HTML
+* CSS
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+* Mongoose
+
+### Tools
+
+* Git
+* GitHub
+* Vite
+
+## Projects Included
+
+1. AI Chatbot
+
+   * Java-based chatbot developed using rule-based techniques and NLP concepts.
+
+2. Job Portal
+
+   * A platform connecting job seekers and recruiters with job application management features.
+
+3. Personal Portfolio Website
+
+   * A full-stack portfolio application showcasing projects, skills, and contact information.
+
+## Installation and Setup
+
+### Clone the repository
+
+```bash
+git clone https://github.com/RajeshKamuju/my-portfolio.git
+cd my-portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the application locally
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Start production server
+
+```bash
+npm start
+```
+
+## Author
+
+**Rajesh Kamuju**
+
+B.Tech Computer Science and Engineering Student
+
+BVC Institute of Technology and Science
+
+GitHub: https://github.com/RajeshKamuju
