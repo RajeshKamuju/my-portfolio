@@ -1,6 +1,6 @@
 {
-  "name": "Personal Portfolio",
-  "description": "A full-stack personal portfolio with dynamic project updates, interactive features, and contact forms.",
+  "name": "Rajesh Portfolio",
+  "description": "A personal portfolio website showcasing my skills, projects, and learning journey in Java, Full Stack Development, and Artificial Intelligence.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  
 }

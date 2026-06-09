@@ -169,10 +169,12 @@ export default function Projects({ projects, status, onRefresh }: ProjectsProps)
         {/* Section Header */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-16">
           <div className="text-center md:text-left">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">Featured Projects</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+  My Projects
+</h2>
             <div className="h-1 w-16 bg-blue-500 rounded-full mb-4 mx-auto md:mx-0" />
             <p className="text-slate-400 text-sm sm:text-base max-w-xl">
-              Each card below represents a real database entry. Toggle Editor Mode to try the POST, PUT, and DELETE APIs.
+              The following projects showcase my learning journey and practical experience in software development.
             </p>
           </div>
 
@@ -217,13 +219,13 @@ export default function Projects({ projects, status, onRefresh }: ProjectsProps)
             {!status.connected && (
               <div className="flex items-center gap-2 text-[10px] font-mono text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded border border-amber-500/20">
                 <AlertTriangle className="w-3.5 h-3.5" />
-                No MONGO_URI in Secrets - In-Memory Fallback Active
+                Database Connection Unavailable
               </div>
             )}
             {status.connected && (
               <div className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20 flex items-center gap-1.5">
                 <Check className="w-3.5 h-3.5" />
-                Live MongoDB Atlas Connection Active
+                MongoDB Atlas Connected
               </div>
             )}
           </div>
@@ -289,7 +291,7 @@ export default function Projects({ projects, status, onRefresh }: ProjectsProps)
                     required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
-                    placeholder="e.g. Cognitive Task Automation Engine"
+                    placeholder="e.g. AI Chatbot"
                     className="w-full bg-slate-950 text-white border border-slate-800 hover:border-slate-755 focus:border-blue-500 rounded-lg p-3 text-sm focus:outline-none transition"
                   />
                 </div>
@@ -359,7 +361,7 @@ export default function Projects({ projects, status, onRefresh }: ProjectsProps)
                     disabled={isSubmitting}
                     className="flex-1 py-3 bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white font-medium rounded-lg text-sm transition shadow-lg cursor-pointer"
                   >
-                    {isSubmitting ? "Saving record..." : editingProject ? "Save Changes" : "Submit to Database"}
+                    {isSubmitting ? "Saving record..." : editingProject ? "Save Changes" : "Save Project"}
                   </button>
                 </div>
               </div>
@@ -378,7 +380,7 @@ export default function Projects({ projects, status, onRefresh }: ProjectsProps)
             <div className="p-3 bg-slate-950 border border-slate-850 rounded-full group-hover:scale-105 transition duration-300">
               <Plus className="w-6 h-6 text-blue-400" />
             </div>
-            <div className="font-semibold text-sm">Add a Custom Project</div>
+            <div className="font-semibold text-sm">Add New Project</div>
             <div className="text-xs text-slate-500 font-mono">Triggers backend: POST /projects</div>
           </motion.button>
         )}

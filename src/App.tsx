@@ -120,7 +120,7 @@ NODE_ENV=production`;
             <div className="h-9 w-9 bg-blue-600/10 border border-blue-500/20 rounded-lg flex items-center justify-center font-mono text-sm text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
               AC
             </div>
-            <span className="font-bold text-lg text-white font-sans tracking-tight">alexchen<span className="text-blue-500">.dev</span></span>
+            <span className="font-bold text-lg text-white font-sans tracking-tight">Rajesh Kamuju<span className="text-blue-500">.dev</span></span>
           </button>
 
           {/* Desktop Nav Actions */}
@@ -218,9 +218,9 @@ NODE_ENV=production`;
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-2">
               <div className="h-6 w-6 bg-blue-600/10 border border-blue-500/15 rounded text-blue-400 font-mono text-xs flex items-center justify-center">
-                AC
+                RK
               </div>
-              <span className="font-bold text-white text-base">Alex Chen</span>
+              <span className="font-bold text-white text-base">Rajesh Kamuju</span>
             </div>
             <p className="text-slate-400 text-xs sm:text-sm max-w-sm">
               An elegant, fully responsive portfolio showcase powered by dynamic Node APIs, React framework structures, and real MongoDB persistence handlers.
@@ -252,7 +252,7 @@ NODE_ENV=production`;
         </div>
 
         <div className="max-w-6xl mx-auto px-6 sm:px-12 mt-12 pt-8 border-t border-slate-900/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <span>&copy; {new Date().getFullYear()} Alex Chen. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Rajesh Kamuju. All rights reserved.</span>
           <div className="flex gap-4">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition">GitHub</a>
             <span>&bull;</span>

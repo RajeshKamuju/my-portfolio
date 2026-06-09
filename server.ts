@@ -65,34 +65,36 @@ const MongooseContact = mongoose.model("Contact", contactSchema);
 let localProjects = [
   {
     _id: "seed-1",
-    title: "EcoSphere Weather dashboard",
-    description: "A gorgeous weather tracking tool offering microclimate warnings, real-time AQI tracking, and interactive atmospheric heatmaps.",
-    skills: ["React", "TypeScript", "Tailwind CSS", "D3.js"],
-    image: "https://images.unsplash.com/photo-1592211594998-96db2b7015d7?auto=format&fit=crop&w=800&q=80",
-    github: "https://github.com/developer/ecosphere",
-    demo: "https://ecosphere.demo.dev",
-    createdAt: new Date("2026-01-10T10:00:00Z"),
+    title: "AI Chatbot",
+    description: "A Java-based chatbot designed to answer frequently asked questions using rule-based techniques and NLP concepts.",
+    skills: ["Java", "NLP", "Eclipse"],
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/RajeshKamuju",
+    demo: "#",
+    createdAt: new Date(),
   },
+
   {
     _id: "seed-2",
-    title: "Cognitive Task Automation Engine",
-    description: "An automated workflow builder that parses structured voice notes to organize Kanban task boards with Gemini-driven auto-categorizations.",
-    skills: ["Node.js", "Express", "MongoDB", "Gemini API"],
-    image: "https://images.unsplash.com/photo-1484417894907-623942c8ea29?auto=format&fit=crop&w=800&q=80",
-    github: "https://github.com/developer/cognitive-tasks",
-    demo: "https://cognitive.task.dev",
-    createdAt: new Date("2026-03-15T12:00:00Z"),
+    title: "Job Portal",
+    description: "A web application connecting job seekers and recruiters with features such as authentication and job applications.",
+    skills: ["Java", "MySQL", "HTML", "CSS"],
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/RajeshKamuju",
+    demo: "#",
+    createdAt: new Date(),
   },
+
   {
     _id: "seed-3",
-    title: "VividCanvas Retro Canvas Studio",
-    description: "A multi-user drawing workspace featuring custom canvas filters, retro pixel layouts, and high-fidelity PNG layers generation.",
-    skills: ["React", "HTML5 Canvas", "Tailwind CSS", "WebSockets"],
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80",
-    github: "https://github.com/developer/vivid-canvas",
-    demo: "https://vividcanvas.art",
-    createdAt: new Date("2026-05-20T14:30:00Z"),
-  },
+    title: "Personal Portfolio Website",
+    description: "A full-stack portfolio website developed using React, Node.js, and MongoDB to showcase projects and technical skills.",
+    skills: ["React", "TypeScript", "MongoDB"],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/RajeshKamuju/my-portfolio",
+    demo: "#",
+    createdAt: new Date(),
+  }
 ];
 
 let localContacts: any[] = [

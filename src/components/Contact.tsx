@@ -111,7 +111,7 @@ export default function Contact() {
           </motion.h2>
           <div className="h-1 w-16 bg-blue-500 mx-auto rounded-full mb-4" />
           <p className="text-slate-400 text-sm">
-            Have an exciting idea or role? Send a message and verify its dynamic persistence in the database audit log.
+            Feel free to reach out if you would like to connect, discuss projects, or explore collaboration opportunities.
           </p>
         </div>
 
@@ -120,10 +120,10 @@ export default function Contact() {
           {/* Info Side Area (Columns 5) */}
           <div className="lg:col-span-5 space-y-8">
             <div className="bg-slate-900/60 border border-slate-800 p-6 sm:p-8 rounded-2xl space-y-6">
-              <h3 className="text-xl font-bold text-white">Full-Stack Contact Channels</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
-                Submitting the contact form fires a <code className="text-blue-400 font-mono text-xs font-semibold">POST /contact</code> payload. If MongoDB is configured via mongoose, it immediately saves validation models to the <code className="text-violet-400 font-mono text-xs font-semibold">contacts</code> collection.
-              </p>
+              <h3 className="text-xl font-bold text-white">Contact Information</h3>
+             <p className="text-slate-400 text-sm leading-relaxed">
+  The contact form is integrated with a Node.js backend and MongoDB database to store submitted messages dynamically.
+</p>
 
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-4 text-slate-300">
@@ -132,7 +132,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500 font-mono">DIRECT INQUIRIES</div>
-                    <div className="text-sm font-semibold text-white">alex.chen@example.com</div>
+                    <div className="text-sm font-semibold text-white">rkamuju39@gmail.com</div>
                   </div>
                 </div>
 
@@ -141,8 +141,8 @@ export default function Contact() {
                     <MessagesSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs text-slate-500 font-mono">DATABASE MODEL</div>
-                    <div className="text-sm font-semibold text-white">Mongoose.Schema("Contact")</div>
+                    <div className="text-xs text-slate-500 font-mono">GITHUB</div>
+                    <div className="text-sm font-semibold text-white">https://github.com/RajeshKamuju</div>
                   </div>
                 </div>
               </div>
@@ -151,18 +151,18 @@ export default function Contact() {
             {/* Inbox Toggle button to dynamically verify entries in the frontend */}
             <div className="bg-slate-950/80 border border-slate-800/80 rounded-2xl p-5 space-y-3">
               <div className="font-mono text-xs text-slate-500 flex items-center gap-1.5 uppercase tracking-wider">
-                <ShieldAlert className="w-4 h-4 text-amber-500" /> Administrative Audit
+                <ShieldAlert className="w-4 h-4 text-amber-500" /> Message Center
               </div>
-              <h4 className="text-sm font-semibold text-white">Verify Dynamic Messages Inbox</h4>
+              <h4 className="text-sm font-semibold text-white">View Submitted Messages</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
-                The database captures submissions instantly. Tap below to see live entries retrieved from the database collections.
+                View messages submitted through the contact form.
               </p>
               <button
                 id="toggle-inbox-btn"
                 onClick={() => setShowInbox(!showInbox)}
                 className="w-full mt-2 py-2.5 px-4 rounded-xl border border-slate-700 bg-slate-900 hover:bg-slate-850 text-slate-300 text-xs font-bold font-mono tracking-wide transition flex items-center justify-center gap-2 cursor-pointer shadow"
               >
-                {showInbox ? "Hide Inbox Audit Panel" : "Show Real-Time Inbox Logs"}
+                {showInbox ? "Hide Messages" : "View Messages"}
               </button>
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                       required
                       value={name}
                       onChange={(e) => setName(e.target.value)}
-                      placeholder="e.g. John Doe"
+                      placeholder="RAJESH KAMUJU"
                       className="w-full bg-slate-950 text-white border border-slate-800 hover:border-slate-750 focus:border-blue-500 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none transition"
                     />
                   </div>
@@ -211,7 +211,7 @@ export default function Contact() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="e.g. john@example.com"
+                      placeholder="rkamuju39@gmail.com"
                       className="w-full bg-slate-950 text-white border border-slate-800 hover:border-slate-750 focus:border-blue-500 rounded-xl pl-10 pr-4 py-3 text-sm focus:outline-none transition"
                     />
                   </div>
@@ -228,7 +228,7 @@ export default function Contact() {
                     rows={5}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Describe your design, timeline, requirements..."
+                    placeholder="Type your message here..."
                     className="w-full bg-slate-950 text-white border border-slate-800 hover:border-slate-750 focus:border-blue-500 rounded-xl p-4 text-sm resize-none focus:outline-none transition"
                   />
                 </div>
@@ -243,12 +243,12 @@ export default function Contact() {
                   {isSubmitting ? (
                     <>
                       <RefreshCw className="w-4 h-4 animate-spin" />
-                      Saving to collection...
+                      Sending Message...
                     </>
                   ) : (
                     <>
                       <Send className="w-4 h-4" />
-                      Deliver Message
+                      Send Message
                     </>
                   )}
                 </button>
@@ -272,7 +272,7 @@ export default function Contact() {
                         <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
                       )}
                       <div>
-                        <div className="font-semibold">{apiResponse.success ? "Submission Success" : "Delivery Error"}</div>
+                        <div className="font-semibold">{apiResponse.success ? "Message Sent" : "Submission Failed"}</div>
                         <div className="text-xs">{apiResponse.message}</div>
                       </div>
                     </motion.div>
@@ -299,7 +299,7 @@ export default function Contact() {
               <div className="p-6 border-b border-slate-850/80 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <MessagesSquare className="text-blue-400 w-5 h-5" />
-                  <h3 className="text-md sm:text-lg font-bold text-white uppercase tracking-wider font-mono">Live Mongo DB Contacts collection</h3>
+                  <h3 className="text-md sm:text-lg font-bold text-white uppercase tracking-wider font-mono">Submitted Messages</h3>
                 </div>
                 <div className="flex items-center gap-4">
                   <button
@@ -308,13 +308,13 @@ export default function Contact() {
                     className="p-2 border border-slate-800 rounded bg-slate-900 hover:bg-slate-850 text-slate-400 hover:text-white text-xs flex items-center gap-1 cursor-pointer transition"
                   >
                     <RefreshCw className={`w-3.5 h-3.5 ${loadingInbox ? 'animate-spin' : ''}`} />
-                    Sync Logs
+                    Refresh
                   </button>
                   <button
                     onClick={() => setShowInbox(false)}
                     className="p-1 px-2.5 text-slate-400 hover:text-white rounded bg-slate-900 text-xs hover:bg-slate-850 transition"
                   >
-                    Close Log
+                    Close
                   </button>
                 </div>
               </div>
@@ -322,7 +322,7 @@ export default function Contact() {
               <div className="p-6 max-h-[350px] overflow-y-auto space-y-4">
                 {messages.length === 0 ? (
                   <p className="text-center py-10 text-slate-500 text-sm font-mono">
-                    Inbox is empty! Send a message through the form to see it pop here.
+                    No messages have been submitted yet.
                   </p>
                 ) : (
                   messages.map((msg, idx) => (

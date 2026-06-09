@@ -32,7 +32,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            Available for premium contract & roles
+            Open to Internships and Entry-Level Opportunities
           </motion.div>
 
           <div className="space-y-4">
@@ -42,7 +42,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight"
             >
-              Hi, I'm <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-500 bg-clip-text text-transparent hover:brightness-110 transition duration-300">Alex Chen</span>
+              Hi, I'm <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-500 bg-clip-text text-transparent hover:brightness-110 transition duration-300">Rajesh Kamuju</span>
             </motion.h1>
             
             <motion.h2
@@ -51,7 +51,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-2xl sm:text-3xl font-medium text-slate-300"
             >
-              Full-Stack Developer & Cloud Systems Architect
+              Java Full Stack Developer | B.Tech CSE Student
             </motion.h2>
 
             <motion.p
@@ -60,7 +60,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-slate-400 text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
-              I build robust, high-availability full-stack applications with beautiful interfaces, dynamic Node/Express APIs, and structured MongoDB pipelines.
+             Passionate Computer Science student with an interest in Java, Full Stack Development, and Artificial Intelligence. I enjoy building practical applications and continuously improving my problem-solving skills through projects and hands-on learning.
             </motion.p>
           </div>
 
@@ -96,7 +96,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
           >
             <a
               id="social-github"
-              href="https://github.com"
+              href="https://github.com/RajeshKamuju"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:text-white hover:bg-slate-800 transition"
@@ -105,7 +105,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
             </a>
             <a
               id="social-linkedin"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rajesh-kamuju-b8800738a/"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:text-white hover:bg-slate-800 transition"
@@ -114,7 +114,7 @@ export default function Home({ onNavigate, projectCount }: HomeProps) {
             </a>
             <a
               id="social-mail"
-              href="mailto:contact@example.com"
+              href="mailto:rkamuju39@gmail.com"
               className="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:text-white hover:bg-slate-800 transition"
             >
               <Mail className="w-5 h-5" />

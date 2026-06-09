@@ -8,56 +8,54 @@ import { Check, Terminal, ExternalLink, Code2, Layers, Server, ShieldCheck } fro
 
 export default function Skills() {
   const skillSections = [
-    {
-      title: "Frontend Development",
-      icon: Code2,
-      color: "from-blue-500/20 to-cyan-500/10",
-      skills: [
-        { name: "React 19 & Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "Redux Toolkit & Context", level: 85 },
-        { name: "HTML5 & Canvas", level: 85 },
-        { name: "D3.js / Recharts", level: 80 }
-      ]
-    },
-    {
-      title: "Backend Development",
-      icon: Server,
-      color: "from-indigo-500/20 to-violet-500/10",
-      skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Express.js", level: 92 },
-        { name: "REST APIs Architecture", level: 95 },
-        { name: "GraphQL", level: 75 },
-        { name: "Aynchronous Event Loops", level: 85 }
-      ]
-    },
-    {
-      title: "Database Engineering",
-      icon: Layers,
-      color: "from-emerald-500/20 to-teal-500/10",
-      skills: [
-        { name: "MongoDB & Mongoose", level: 92 },
-        { name: "PostgreSQL & SQL", level: 85 },
-        { name: "Redis Caching", level: 78 },
-        { name: "ORM (Sequelize, Drizzle)", level: 80 },
-        { name: "Aggregation Frameworks", level: 84 }
-      ]
-    },
-    {
-      title: "Cloud & Devops",
-      icon: ShieldCheck,
-      color: "from-pink-500/20 to-purple-500/10",
-      skills: [
-        { name: "Docker Containers", level: 80 },
-        { name: "Firebase (Auth / Store)", level: 88 },
-        { name: "Vercel / Render / GCP", level: 90 },
-        { name: "GitHub Actions CI/CD", level: 82 },
-        { name: "API Security & Cors", level: 90 }
-      ]
-    }
-  ];
+  {
+    title: "Frontend Development",
+    icon: Code2,
+    color: "from-blue-500/20 to-cyan-500/10",
+    skills: [
+      { name: "HTML", level: 85 },
+      { name: "CSS", level: 80 },
+      { name: "JavaScript", level: 75 },
+      { name: "React", level: 70 },
+      { name: "TypeScript", level: 65 }
+    ]
+  },
+
+  {
+    title: "Backend Development",
+    icon: Server,
+    color: "from-indigo-500/20 to-violet-500/10",
+    skills: [
+      { name: "Java", level: 85 },
+      { name: "Node.js", level: 70 },
+      { name: "Express.js", level: 70 },
+      { name: "REST APIs", level: 65 }
+    ]
+  },
+
+  {
+    title: "Database Technologies",
+    icon: Layers,
+    color: "from-emerald-500/20 to-teal-500/10",
+    skills: [
+      { name: "MongoDB", level: 75 },
+      { name: "Mongoose", level: 70 },
+      { name: "MySQL", level: 80 }
+    ]
+  },
+
+  {
+    title: "Tools & Platforms",
+    icon: ShieldCheck,
+    color: "from-pink-500/20 to-purple-500/10",
+    skills: [
+      { name: "Git", level: 75 },
+      { name: "GitHub", level: 80 },
+      { name: "Vercel", level: 65 },
+      { name: "Render", level: 60 }
+    ]
+  }
+];
 
   return (
     <section id="skills" className="py-24 relative overflow-hidden">
@@ -75,7 +73,7 @@ export default function Skills() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl font-bold text-white mb-4"
           >
-            My Tech Stacks
+            Technical Skills
           </motion.h2>
           <div className="h-1 w-16 bg-blue-500 mx-auto rounded-full mb-4" />
           <motion.p
@@ -85,7 +83,7 @@ export default function Skills() {
             transition={{ delay: 0.1 }}
             className="text-slate-400"
           >
-            A comprehensive breakdown of my languages, tools, frameworks, and architecture specialties.
+            The technologies and tools I have learned and used through academic projects and practical experience.
           </motion.p>
         </div>
 
@@ -150,13 +148,13 @@ export default function Skills() {
           className="mt-12 bg-slate-950/60 border border-slate-850 rounded-xl p-5 flex flex-wrap justify-between items-center gap-4"
         >
           <div className="flex items-center gap-3">
-            <Terminal className="text-blue-400 w-5 h-5 flex-shrink-0" />
-            <span className="text-xs sm:text-sm text-slate-400 leading-relaxed font-mono">
-              $ cat requirements.json | grep -A2 "philosophies" <span className="text-slate-600">--&gt; {"[\"Clean Code\", \"Always-Up REST\", \"Type Safety\"]"}</span>
-            </span>
-          </div>
+  <Terminal className="text-blue-400 w-5 h-5 flex-shrink-0" />
+  <span className="text-xs sm:text-sm text-slate-400 leading-relaxed font-mono">
+    Problem Solving | Continuous Learning | Team Work
+  </span>
+</div>
           <div className="text-[10px] font-mono font-medium text-slate-500 bg-slate-900 border border-slate-800 rounded px-2.5 py-1">
-            Build Mode: Production-Target
+           Learning Mode: Active
           </div>
         </motion.div>
 

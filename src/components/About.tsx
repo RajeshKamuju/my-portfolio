@@ -7,36 +7,36 @@ import { motion } from "motion/react";
 import { Award, Briefcase, GraduationCap, Code } from "lucide-react";
 
 export default function About() {
-  const experiences = [
-    {
-      role: "Senior Full-Stack Architect",
-      company: "InnovateTech Solutions",
-      period: "2024 - Present",
-      description: "Spearheaded the redesign of enterprise cloud orchestration systems, connecting Node backends with distributed MongoDB clusters to reduce API query times by 40%.",
-      icon: Briefcase,
-    },
-    {
-      role: "Full-Stack Software Engineer",
-      company: "CloudBound Labs",
-      period: "2022 - 2024",
-      description: "Implemented high-throughput Express.js REST APIs and real-time analytical dashboards using React and Tailwind CSS. Managed large-scale MongoDB database migrations.",
-      icon: Code,
-    },
-    {
-      role: "Bachelor of Science in Computer Science",
-      company: "Stanford University",
-      period: "2018 - 2022",
-      description: "Specialized in Software Engineering, database normalization algorithms, and cloud systems security paradigms.",
-      icon: GraduationCap,
-    },
-  ];
+const experiences = [
+  {
+    role: "B.Tech Computer Science Student",
+    company: "BVC Institute of Technology and Science",
+    period: "2024 - Present",
+    description: "Pursuing undergraduate studies in Computer Science with a focus on programming, databases, and software development.",
+    icon: GraduationCap,
+  },
+  {
+    role: "Java Full Stack Development Training",
+    company: "Self Learning & Online Courses",
+    period: "2025 - Present",
+    description: "Learning Java, HTML, CSS, JavaScript, Node.js, MongoDB, and Full Stack Development through hands-on practice and projects.",
+    icon: Code,
+  },
+  {
+    role: "Academic & Personal Projects",
+    company: "Project Development",
+    period: "2025 - Present",
+    description: "Built projects including AI Chatbot, Job Portal, and Personal Portfolio Website to strengthen practical development and problem-solving skills.",
+    icon: Briefcase,
+  },
+];
 
   const highlights = [
-    { title: "Clean Code", value: "SOLID, DRY, and well-commented" },
-    { title: "Performant APIs", value: "Optimized queries & caching" },
-    { title: "User First", value: "Aesthetic layouts and micro-interactions" },
-    { title: "Highly Scalable", value: "Modular folder architectures" },
-  ];
+  { title: "Programming", value: "Java & JavaScript" },
+  { title: "Database", value: "MongoDB & MySQL" },
+  { title: "Learning", value: "Problem Solving" },
+  { title: "Goal", value: "Full Stack Developer" },
+];
 
   return (
     <section id="about" className="py-24 relative overflow-hidden bg-slate-900/40">
@@ -60,7 +60,7 @@ export default function About() {
             transition={{ delay: 0.1 }}
             className="text-slate-400"
           >
-            I resolve complex product challenges by writing clean, highly semantic, and secure full-stack code.
+            I am a Computer Science student passionate about Java, Full Stack Development, and Artificial Intelligence. I enjoy building practical applications and continuously improving my technical skills through hands-on projects.
           </motion.p>
         </div>
 
@@ -71,10 +71,10 @@ export default function About() {
             <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 sm:p-8 space-y-6">
               <h3 className="text-xl font-semibold text-white">Who I Am & What I Do</h3>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                With a passion for building robust digital systems, I specialize in combining modern, ultra-responsive frontend architectures with high-performance Node.js servers and structured MongoDB collections.
+                I am currently pursuing my B.Tech in Computer Science and Engineering. I have a strong interest in Java programming, web development, and problem-solving. I enjoy learning new technologies and applying them through real-world projects.
               </p>
               <p className="text-slate-300 leading-relaxed text-sm sm:text-base">
-                I believe that good programming is about both technical viability and seamless user delight. My systems are fully responsive, accessible, secure, and ready to meet exact client specifications.
+               I believe that continuous learning and practical implementation are essential for growth as a developer. My goal is to build efficient, user-friendly applications while strengthening my software development skills.
               </p>
 
               {/* Dynamic highlights */}
@@ -94,8 +94,8 @@ export default function About() {
                 <Award className="w-8 h-8 text-blue-400" />
               </div>
               <div>
-                <div className="text-lg font-bold text-white">Pragmatic Architect</div>
-                <div className="text-xs text-slate-400">Delivering production-grade deployments with speed and maintainable structures.</div>
+                <div className="text-lg font-bold text-white">Passionate Learner</div>
+                <div className="text-xs text-slate-400">Continuously improving my technical skills through projects and practical learning.</div>
               </div>
             </div>
           </div>
