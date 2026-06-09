@@ -91,8 +91,8 @@ npm start
 
 **Rajesh Kamuju**
 
-B.Tech Computer Science and Engineering Student
+B.Tech Information Technology Student
 
-BVC Institute of Technology and Science
+Bonam venkata chalamayya Institute of Technology and Science
 
 GitHub: https://github.com/RajeshKamuju
